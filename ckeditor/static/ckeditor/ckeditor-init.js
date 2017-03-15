@@ -13,12 +13,12 @@
 
     function initialiseCKEditorInInlinedForms() {
       try {
-        $(document).on("click", ".add-row a, .grp-add-handler", function () {
+        $(document).on("click", ".add-row a, .grp-add-handler, .cp-plugin-add-button", function () {
           initialiseCKEditor();
           return true;
         });
       } catch (e) {
-        $(document).delegate(".add-row a, .grp-add-handler", "click",  function () {
+        $(document).delegate(".add-row a, .grp-add-handler, .cp-plugin-add-button", "click",  function () {
           initialiseCKEditor();
           return true;
         });
